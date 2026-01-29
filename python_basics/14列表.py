@@ -19,7 +19,9 @@ print(list3[3][0])
 
 print("-"*50)
 
-# 列表对象的内部自带方法.append()，于末位增加数据
+
+# 增
+# 列表对象的内部自带方法.append(对象)，于末位增加数据
 list4=[]
 print(list4)
 list4.append("append_object")
@@ -27,7 +29,7 @@ print(list4)
 
 print("-"*50)
 
-# 列表对象的内部自带方法.insert(index,object)，于下标处插入数据
+# 列表对象的内部自带方法.insert(下标,对象)，于下标处插入数据
 list5 = [0,1,2]
 print(list5)
 list5.insert(1,"insert_object")
@@ -35,7 +37,7 @@ print(list5)
 
 print("-"*50)
 
-# 列表对象的内部自带方法.extend(可迭代对象)，将可迭代对象中的内容依次取出，追加到列表尾部
+# 列表对象的内部自带方法.extend(可迭代对象)，将可迭代对象中的内容依次取出，追加到列表尾部，如果是字符串，则会逐个字符追加。
 list6 = [0,1,2]
 print(list6)
 list6.extend(list5)
@@ -43,15 +45,18 @@ print(list6)
 
 print("-"*50)
 
+
+# 删
 # 列表对象的内部自带方法.pop(下标)，删除指定下标的数据，并将被删除的数据作为此方法的返回值
 list7=[0,1,2,3,4,"pop_object"]
 print(list7)
-list7.pop(5)
+ret = list7.pop(5)
 print(list7)
+print(ret)
 
 print("-"*50)
 
-# 列表对象的内部自带方法.remove(object)，删除容器中第一次出现的目标对象
+# 列表对象的内部自带方法.remove(object)，删除容器中目标对象的第一次出现
 list8 = [0,1,2,3,4,5,1]
 print(list8)
 list8.remove(1)
@@ -67,7 +72,7 @@ print(list9)
 
 print("-"*50)
 
-# 本地函数del，可用于删除任意容器中指定下标对应的数据，也可用于删除整个容器
+# 本地函数del，可用于删除任意容器中指定下标对应的数据，但不会返回被删除的数据，也可用于删除整个容器
 list10 = [0,1]
 print(list10)
 del list10[0]
@@ -116,3 +121,5 @@ print(list14)
 list14.sort(reverse=True)
 print(list14)
 
+
+# 查和改使用下标访问实现。

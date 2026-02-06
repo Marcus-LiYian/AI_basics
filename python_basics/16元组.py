@@ -20,7 +20,7 @@ print(tuple3)
 print("-"*50)
 
 # 定义仅一个数据的元组
-# 若不加逗号，则会发生退化
+# 若不加逗号，则会发生衰变
 tuple4 = (1,)
 tuple5 = (1)
 print(tuple4,type(tuple4))

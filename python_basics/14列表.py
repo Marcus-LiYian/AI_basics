@@ -87,7 +87,11 @@ del list10
 
 print("-"*50)
 
-# 列表对象的内部自带方法.index(object)，获取目标对象第一次出现时的下标
+
+
+# 其他方法
+
+# 列表对象的内部自带方法.index(对象)，获取目标对象第一次出现时的下标
 list11 = [5,4,3,2,1,5]
 print(list11)
 index=list11.index(5)

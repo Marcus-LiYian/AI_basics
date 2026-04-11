@@ -12,7 +12,7 @@ infor1 = "我叫" + name + "，性别" + gender
 print(infor1)
 
 # 写法二：使用占位符
-infor2 = "我的名字是%s，性别是%s，年龄是%10.5i，体重是%0.1f" % (name, gender, age, weight)
+infor2 = "我的名字是%s，性别是%s，年龄是%0.5i，体重是%0.1i" % (name, gender, age, weight)
 print(infor2)
 
 # 只有占位符%s可以输出任何数据（底层默认有数据类型转换）

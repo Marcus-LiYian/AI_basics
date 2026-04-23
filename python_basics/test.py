@@ -2,5 +2,7 @@
 # 2026年04月15日10时53分24秒
 
 
-if "午睡":
-    print("午睡")
+for row in range(1,10):
+    for column in range(1,row+1):
+        print(f"{column}*{row}={column*row}",end="\t")
+    print()

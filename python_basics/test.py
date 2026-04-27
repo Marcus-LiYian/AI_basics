@@ -2,7 +2,11 @@
 # 2026年04月15日10时53分24秒
 
 
-print("欢迎来到答题挑战，输入q即可退出")
-question1="1+1=?"
-question2="1+2=?"
-question3="1+3=?"
+def test(a,b,*args,c,**kwargs):
+    print(a)
+    print(b)
+    print(args)
+    print(c)
+    print(kwargs)
+
+test(1,2,3,4,c=5,d=6,e=7)

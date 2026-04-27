@@ -2,7 +2,7 @@
 # 2026年04月15日10时53分24秒
 
 
-for row in range(1,10):
-    for column in range(1,row+1):
-        print(f"{column}*{row}={column*row}",end="\t")
-    print()
+print("欢迎来到答题挑战，输入q即可退出")
+question1="1+1=?"
+question2="1+2=?"
+question3="1+3=?"
